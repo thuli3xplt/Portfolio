@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THULINA DISSANAYAKE // OPERATIVE</title>
+  <title>THULINA DISSANAYAKE // PORTFOLIO</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Exo+2:ital,wght@0,100;0,400;0,600;1,300&display=swap"
     rel="stylesheet">
@@ -1399,111 +1399,7 @@
       color: var(--neon-red);
     }
 
-    /* ─── AUDIO PLAYER ─── */
-    #audio-toggle {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      z-index: 10000;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
 
-    .audio-visualizer {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      height: 18px;
-    }
-
-    .audio-bar {
-      width: 3px;
-      background: var(--neon-red);
-      border-radius: 2px;
-      box-shadow: 0 0 6px var(--neon-red-glow);
-      animation: audio-pulse 1.2s ease-in-out infinite;
-    }
-
-    .audio-bar:nth-child(1) {
-      height: 8px;
-      animation-delay: 0s;
-    }
-
-    .audio-bar:nth-child(2) {
-      height: 14px;
-      animation-delay: 0.15s;
-    }
-
-    .audio-bar:nth-child(3) {
-      height: 18px;
-      animation-delay: 0.3s;
-    }
-
-    .audio-bar:nth-child(4) {
-      height: 10px;
-      animation-delay: 0.45s;
-    }
-
-    .audio-bar:nth-child(5) {
-      height: 16px;
-      animation-delay: 0.6s;
-    }
-
-    @keyframes audio-pulse {
-
-      0%,
-      100% {
-        transform: scaleY(0.4);
-        opacity: 0.6;
-      }
-
-      50% {
-        transform: scaleY(1);
-        opacity: 1;
-      }
-    }
-
-    .audio-visualizer.muted .audio-bar {
-      animation: none;
-      transform: scaleY(0.3);
-      opacity: 0.2;
-    }
-
-    #mute-btn {
-      background: rgba(5, 0, 12, 0.95);
-      border: 1px solid rgba(255, 0, 51, 0.4);
-      color: var(--neon-red);
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: none;
-      font-size: 1rem;
-      transition: all 0.3s;
-      box-shadow: 0 0 15px rgba(255, 0, 51, 0.1);
-      flex-shrink: 0;
-    }
-
-    #mute-btn:hover {
-      border-color: var(--neon-red);
-      box-shadow: 0 0 25px rgba(255, 0, 51, 0.3);
-      background: rgba(255, 0, 51, 0.1);
-    }
-
-    .audio-track {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 0.55rem;
-      color: var(--text-dim);
-      letter-spacing: 0.1em;
-      white-space: nowrap;
-      transition: color 0.3s;
-    }
-
-    #audio-toggle:hover .audio-track {
-      color: var(--neon-red);
-    }
 
     /* ─── DIVIDER ─── */
     .section-divider {
@@ -1705,23 +1601,7 @@
     <span class="nav-status">ONLINE</span>
   </nav>
 
-  <!-- AUDIO -->
-  <audio id="bg-audio" loop>
-    <source
-      src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kirk_Osamayo/Cinematic_Tension_Music_Vol_1/Kirk_Osamayo_-_01_-_The_Hunt.mp3"
-      type="audio/mpeg">
-  </audio>
-  <div id="audio-toggle">
-    <div class="audio-visualizer muted" id="audio-viz">
-      <div class="audio-bar"></div>
-      <div class="audio-bar"></div>
-      <div class="audio-bar"></div>
-      <div class="audio-bar"></div>
-      <div class="audio-bar"></div>
-    </div>
-    <span class="audio-track" id="audio-track-label">NAV — DON'T NEED FRIENDS</span>
-    <button id="mute-btn" onclick="toggleMute()" title="Toggle Music">🔇</button>
-  </div>
+
 
   <!-- ═══ HERO ═══ -->
   <section id="hero">
@@ -1731,7 +1611,7 @@
       <span class="glitch-target" data-text="DISSANAYAKE">DISSANAYAKE</span>
     </h1>
     <div class="hero-sub">Cybersecurity Operative &nbsp;|&nbsp; CTF Hunter &nbsp;|&nbsp; Future Red Teamer</div>
-    <p class="hero-tagline"><span>"I don't break systems.</span><br>I expose their truth."</p>
+
     <div class="hero-cta">
       <a href="#ctf" class="btn-primary">View Arsenal</a>
       <a href="#contact" class="btn-secondary">Initiate Contact</a>
@@ -1863,7 +1743,7 @@
         <div class="skill-row">
           <div class="skill-name">Linux</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="92">
+            <div class="skill-bar-fill" data-pct="80">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1872,7 +1752,7 @@
         <div class="skill-row">
           <div class="skill-name">Python</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="85">
+            <div class="skill-bar-fill" data-pct="60">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1881,7 +1761,7 @@
         <div class="skill-row">
           <div class="skill-name">Web Exploitation</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="88">
+            <div class="skill-bar-fill" data-pct="60">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1890,7 +1770,7 @@
         <div class="skill-row">
           <div class="skill-name">Reverse Eng.</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="75">
+            <div class="skill-bar-fill" data-pct="45">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1899,7 +1779,7 @@
         <div class="skill-row">
           <div class="skill-name">OSINT</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="82">
+            <div class="skill-bar-fill" data-pct="50">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1908,7 +1788,7 @@
         <div class="skill-row">
           <div class="skill-name">Cloud Security</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="78">
+            <div class="skill-bar-fill" data-pct="50">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1917,7 +1797,7 @@
         <div class="skill-row">
           <div class="skill-name">Burp Suite</div>
           <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-pct="86">
+            <div class="skill-bar-fill" data-pct="60">
               <div class="skill-bar-glow"></div>
             </div>
           </div>
@@ -1991,7 +1871,7 @@
             <p>Designed and deployed cloud solutions leveraging EC2 instances, S3 buckets, IAM policies, and Lambda
               functions. Implemented VPC configurations with security groups and NACLs to build isolated, secure network
               environments following AWS Well-Architected Framework principles.</p>
-            <a href="#" class="project-link">VIEW PROJECT →</a>
+
           </div>
         </div>
       </div>
@@ -2054,7 +1934,7 @@
         <p>You've reached the end of the operative's dossier. If you're here, you already know what you want. Let's not
           waste each other's time — reach out through the most appropriate channel.</p>
         <div class="contact-links">
-          <a href="https://github.com/thulina-dissanayake" target="_blank" class="contact-link">
+          <a href="https://github.com/thuli3xplt" target="_blank" class="contact-link">
             <span class="contact-link-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -2072,7 +1952,7 @@
             </span>
             <span>LinkedIn // Thulina Dissanayake</span>
           </a>
-          <a href="mailto:thulina@operative.sh" class="contact-link">
+          <a href="thulinaanujaya@gmail.com" class="contact-link">
             <span class="contact-link-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -2104,7 +1984,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-text">© 2025 <span>THULINA DISSANAYAKE</span> // ALL RIGHTS RESERVED</div>
-    <div class="footer-text">OPERATIVE FILE NO. 0047 // <span>STATUS: ACTIVE</span></div>
+
   </footer>
 
   <script>
