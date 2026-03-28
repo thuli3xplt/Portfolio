@@ -1310,71 +1310,7 @@
       filter: drop-shadow(0 0 8px var(--neon-red));
     }
 
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .form-label {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 0.62rem;
-      letter-spacing: 0.25em;
-      color: var(--neon-red);
-      text-transform: uppercase;
-    }
-
-    .form-input,
-    .form-textarea {
-      background: rgba(5, 0, 12, 0.8);
-      border: 1px solid rgba(153, 0, 255, 0.15);
-      color: var(--text-primary);
-      padding: 12px 16px;
-      font-family: 'Exo 2', sans-serif;
-      font-size: 0.9rem;
-      outline: none;
-      transition: all 0.3s;
-      resize: none;
-      cursor: none;
-    }
-
-    .form-input:focus,
-    .form-textarea:focus {
-      border-color: var(--neon-red);
-      box-shadow: 0 0 15px rgba(255, 0, 51, 0.1), inset 0 0 15px rgba(255, 0, 51, 0.03);
-    }
-
-    .form-textarea {
-      min-height: 120px;
-    }
-
-    .form-submit {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #000;
-      background: var(--neon-red);
-      padding: 14px 36px;
-      border: none;
-      cursor: none;
-      transition: all 0.3s;
-      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-      align-self: flex-start;
-    }
-
-    .form-submit:hover {
-      background: #fff;
-      box-shadow: 0 0 30px var(--neon-red-glow);
-      transform: translateY(-2px);
-    }
 
     /* ─── FOOTER ─── */
     footer {
@@ -1959,33 +1895,16 @@
                   d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
               </svg>
             </span>
-            <span>Email // thulina@operative.sh</span>
+            <span>thulinaanujaya@gmail.com</span>
           </a>
         </div>
       </div>
-      <form class="contact-form" onsubmit="handleForm(event)">
-        <div class="form-group">
-          <label class="form-label">Identifier</label>
-          <input type="text" class="form-input" placeholder="Your name or alias" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Secure Channel</label>
-          <input type="email" class="form-input" placeholder="your@email.com" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Transmit your message..."></textarea>
-        </div>
-        <button type="submit" class="form-submit">TRANSMIT MESSAGE</button>
-      </form>
+
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-text">© 2025 <span>THULINA DISSANAYAKE</span> // ALL RIGHTS RESERVED</div>
 
-  </footer>
 
   <script>
     // ─── LOADER ───
@@ -2138,20 +2057,7 @@
       });
     }
 
-    // ─── FORM ───
-    function handleForm(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('.form-submit');
-      btn.textContent = 'TRANSMITTED ✓';
-      btn.style.background = '#00ff66';
-      btn.style.color = '#000';
-      setTimeout(() => {
-        btn.textContent = 'TRANSMIT MESSAGE';
-        btn.style.background = '';
-        btn.style.color = '';
-        e.target.reset();
-      }, 3000);
-    }
+
 
 
     // ─── GLITCH EFFECT (random) ───
